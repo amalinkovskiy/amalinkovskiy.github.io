@@ -1,6 +1,7 @@
 var task = document.getElementById("task");
-var submitTask document.getElementById("submitTask");
+var submitTask = document.getElementById("submitTask");
 
 function submitClick(){
-	window.alert("Works fine");
+	var firebaseRef =firebase.database().ref();
+	firebaseRef.child("Task").set("");
 }

@@ -10,9 +10,10 @@
 <!---	<div class="mainDiv" align="right"> --->
 		<h1 align="left">Tasks</h1>
 		<input type="text" name="task" id="task">
-		<button type="submit" value="Submit" id="submitTask" onClick = "submitClick()">Submit</button>
+		<button id="submitTask" onclick="submitClick()">Submit</button>
 	<!---</div>--->
-	
+
+
 <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -26,8 +27,9 @@
   };
   firebase.initializeApp(config);
 </script>
+<script src="add.js"></script>	
 
-<script src="add.js"></script>
+
 
 </body>
 </html>
